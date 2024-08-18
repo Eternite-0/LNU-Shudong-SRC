@@ -7,7 +7,7 @@
           bindtap='letter'>
       <view class="user-info">
           <image class="avatar-border" src="/image/v2/border.png"></image>
-          <image class="avatar" src="{{item.friend.avatar}}"></image>
+          <image class="avatar" src="{{'https://images.weserv.nl/?url='+item.friend.avatar}}"></image>
         <view class="user-name">
           <view class="user-nickname">{{item.friend.nickname}}</view>
           <view class="date-time">{{item.created_at}}</view>

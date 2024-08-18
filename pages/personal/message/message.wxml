@@ -43,7 +43,7 @@
             <view class='left'>
               <view class="avatar-view">
                 <image class="message-avatar-border" src="/image/v2/border.png"></image>
-                <image class="avatar" src='{{item.from_user.avatar}}'></image>
+                <image class="avatar" src='{{"https://images.weserv.nl/?url=" + item.from_user.avatar}}'></image>
               </view>
             </view>
             <view class='content'>
@@ -69,7 +69,7 @@
                     
               <view class='praise' 
               wx:if="{{item.action_type == 2 && item.parentObj != null}}">
-                <image src='/image/make_praise.png'></image>
+                <image src='/image/校园墙praise.png'></image>
               </view>
               <view class='created_at'>{{item.created_at}}</view>
             </view>

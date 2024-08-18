@@ -16,7 +16,6 @@
     "pages/personal/suggestion/suggestion",
     "pages/personal/friends/friends",
     "pages/personal/letter/letter",
-
     "pages/compare_face/face"
   ],
   "window": {
@@ -45,11 +44,19 @@
         "selectedIconPath": "image/v2/select-saylove.png",
         "text": "校园墙"
       },
+      
       {
         "pagePath": "pages/sale/index_2/sale_2",
         "iconPath": "image/v2/sale.png",
         "selectedIconPath": "image/v2/select-sale.png",
-        "text": "挂舍友"
+        "text": "卖舍友"
+      },
+      
+      {
+        "pagePath": "pages/compare_face/face",
+        "iconPath": "image/v2/fall-in-love.png",
+        "selectedIconPath": "image/v2/select-fall-in-love.png",
+        "text": "情侣脸"
       },
 
       {

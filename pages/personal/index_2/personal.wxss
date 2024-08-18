@@ -42,7 +42,7 @@
   width: 50%;
   padding: 20rpx 50rpx;
   font-size: 25rpx;
-  font-family: OPPOSans, OPPOSans-Regular;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 400;
   text-align: CENTER;
   color: #ffffff;
@@ -108,7 +108,7 @@
 
 .nickname{
   font-size: 40rpx;
-  font-family: SF Pro Text, SF Pro Text-Bold;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 700;
   text-align: CENTER;
   color: #303030;
@@ -117,7 +117,7 @@
 
 .fans{
   font-size: 30rpx;
-  font-family: OPPOSans, OPPOSans-Heavy;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 800;
   text-align: CENTER;
   color: #303030;
@@ -125,7 +125,7 @@
 
 .follow{
   font-size: 30rpx;
-  font-family: OPPOSans, OPPOSans-Heavy;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 800;
   text-align: CENTER;
   color: #303030;
@@ -206,7 +206,7 @@
 
 .user-info-flag{
   font-size: 25rpx;
-  font-family: OPPOSans, OPPOSans-Medium;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 500;
   text-align: LEFT;
   color: #353945;
@@ -215,7 +215,7 @@
 
 .user-info-word{
   font-size: 35rpx;
-  font-family: OPPOSans, OPPOSans-Heavy;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 800;
   text-align: LEFT;
   color: #353945;
@@ -246,7 +246,7 @@
   align-items: center;
   justify-content: center;
   font-size: 32rpx;
-  font-family: SF Pro Text, SF Pro Text-Medium;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 500;
   text-align: LEFT;
   color: #303030;
@@ -316,7 +316,7 @@
 .login-button button{
   background: #fbc346;
   font-size: 30rpx;
-  font-family: SF Pro Text, SF Pro Text-Bold;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 700;
   text-align: CENTER;
   color: #303030;
@@ -798,7 +798,7 @@
 .user-name{
   width: 100rpx;
   font-size: 18rpx;
-  font-family: SF Pro Text, SF Pro Text-Bold;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 700;
   text-align: LEFT;
   color: #303030;
@@ -815,7 +815,7 @@
   align-items: flex-end;
   width: 100%;
   font-size: 20rpx;
-  font-family: SF Pro Text, SF Pro Text-Regular;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 400;
   text-align: RIGHT;
   color: #303030;
@@ -861,7 +861,7 @@
 .introduce{
   width: 100%;
   font-size: 20rpx;
-  font-family: SF Pro Text, SF Pro Text-Regular;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 400;
   text-align: LEFT;
   color: #303030;

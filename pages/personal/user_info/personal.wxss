@@ -42,7 +42,8 @@
   width: 50%;
   padding: 20rpx 50rpx;
   font-size: 25rpx;
-  font-family: OPPOSans, OPPOSans-Regular;
+  font-family: PingFangSC, PingFangSC-Regular;
+
   font-weight: 400;
   text-align: CENTER;
   color: #ffffff;

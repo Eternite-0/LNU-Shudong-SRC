@@ -24,7 +24,7 @@
     </view>
   </view>
   <view class='post-content'>
-    <textarea placeholder="名字或代号" class='like' bindinput="getLike"/>
+    <textarea placeholder="喜欢怎样的ta呢..." class='like' bindinput="getLike"/>
     <textarea placeholder="介绍一下舍友吧" 
                 class='introduce'
                 maxlength="1024" 

@@ -7,7 +7,7 @@
     </view>
     <view class="bg-null"></view>
     <view class="avatar-container">
-      <image class="avatar" src='{{user.avatar}}'></image>
+      <image class="avatar" src='{{"https://images.weserv.nl/?url=" + user.avatar}}'></image>
       <image class="header-avatar-border" src="/image/v2/border.png"></image>
       <image class="boy" wx:if="{{user.gender == 1}}" src="/image/v2/boy.png"></image>
       <image class="girl" wx:if="{{user.gender == 2}}" src="/image/v2/girl.png"></image>
@@ -92,8 +92,8 @@
               <image src="/image/v2/index-admin.png" wx:if="{{item.supertube == 1}}"></image>
             </view>
             <view class="nickname-bottom" wx:if="{{item.topic != '无'}}">
-              <view class="nickname-flag" wx:if="{{item.topic != '无'}}">@</view>
-              <view class="bottom-name" wx:if="{{item.topic != '无'}}">{{item.topic}}</view>
+              <view class="nickname-flag" wx:if="{{item.topic != '无'}}">@{{item.topic}}</view>
+          
             </view>
           </view>
           <view class="icon-item">
@@ -139,7 +139,7 @@
               <view class="praise-item" 
                     wx:for="{{item.praises}}" 
                     wx:key="id">
-                <image src="{{item.avatar}}"></image>
+                <image src="{{'https://images.weserv.nl/?url='+item.avatar}}"></image>
                 <view class="praise-name">{{item.nickname}}</view>
               </view>
             </view>

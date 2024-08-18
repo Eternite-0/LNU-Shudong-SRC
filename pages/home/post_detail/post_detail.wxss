@@ -659,7 +659,7 @@ page{
   align-content: center;
   align-items: center;
   font-size: 25rpx;
-  font-family: OPPOSans, OPPOSans-Medium;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 600;
   color: #ff3222;
 }

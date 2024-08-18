@@ -11,7 +11,7 @@
               bindtap='openUserInfo'>
           <view class="user-info">
               <image class="avatar-border" src="/image/v2/border.png"></image>
-              <image class="avatar" src="{{item.be_follow_avatar}}"></image>
+              <image class="avatar" src="{{'https://images.weserv.nl/?url='+item.be_follow_avatar}}"></image>
             <view class="user-name">
               <view class="user-nickname">{{item.be_follow_nickname}}</view>
               <view class="date-time">{{item.created_at}}</view>

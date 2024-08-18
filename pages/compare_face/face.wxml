@@ -39,7 +39,7 @@
       <view class="up-image-data">
         <view class="left-image">
           <image class="left-avatar-border" src="/image/v2/left-border.png"></image>
-          <image class="user-avatar" src="{{postImageLeft}}"></image>
+          <image class="user-avatar" src="{{'https://images.weserv.nl/?url='+postImageLeft}}"></image>
         </view>
         <view class="avatar-gap"><image src="/image/v2/face-cp.png"></image></view>
         <view class="right-image">

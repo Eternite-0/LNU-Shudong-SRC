@@ -23,7 +23,7 @@
     <!-- 话题 -->
     <view class="topic-content" bindtap='openTopic' data-id="{{topic.id}}" wx:if="{{showTopic}}">
       <view class="topic-title"><view class="title"><view>今日话题</view></view></view>
-      <image class="topic-image" mode="aspectFill" src="{{baseImageUrl+topic.attachments[0]}}"></image>
+      <image class="topic-image" mode="aspectFill" src="{{'https://images.weserv.nl/?url=' +baseImageUrl+topic.attachments[0]}}"></image>
       <view class="topic-data">
         <view class="topic-data-content">{{topic.content}}</view>
       </view>
@@ -47,7 +47,7 @@
         <view class="item-header">
           <view class="avatar-item" bindtap="openUserInfo" data-id="{{item.poster.id}}">
             <image class="avatar-border" src="/image/v2/border.png"></image>
-            <image class="user-avatar" src="{{item.poster.avatar}}"></image>
+            <image class="user-avatar" src="{{'https://images.weserv.nl/?url=' +item.poster.avatar}}"></image>
           </view>
           <view class="nickname-item" bindtap="openUserInfo" data-id="{{item.poster.id}}">
             <view class="nickname-top">
@@ -74,8 +74,7 @@
                   wx:for="{{item.attachments}}" 
                    wx:key="id"
                    wx:for-item="sitem"
-                   src="{{baseImageUrl+sitem}}" 
-                   bindtap='previewMoreImage'
+                   src="{{'https://images.weserv.nl/?url=' + baseImageUrl + sitem}}"                   bindtap='previewMoreImage'
                    data-obj="{{item.attachments}}"
                    id="{{baseImageUrl+sitem}}"></image>
           </view>
@@ -103,7 +102,7 @@
                     data-id="{{item.user_id}}"
                     wx:for="{{item.praises}}" 
                     wx:key="id">
-                <image src="{{item.avatar}}"></image>
+                <image src="{{'https://images.weserv.nl/?url=' +item.avatar}}"></image>
                 <view class="praise-name">{{item.nickname}}</view>
               </view>
             </view>
@@ -120,7 +119,7 @@
                     data-objid="{{item.id}}"
                     data-refid="{{sub.id}}" 
                     data-objtype='1'>
-                <image src="{{sub.commenter.avatar}}"></image>
+                <image src="{{'https://images.weserv.nl/?url='+sub.commenter.avatar}}"></image>
                 <view class="comment-name"  wx:if="{{sub.author == 0 && sub.commenter.supertube != 1}}">{{sub.commenter.nickname}}</view>
                 <view class="comment-name"  wx:if="{{sub.author == 1 && sub.commenter.supertube != 1}}">{{sub.commenter.nickname}}(楼主)</view>
                 <view class="comment-name"  wx:if="{{sub.commenter.supertube == 1}}">{{sub.commenter.nickname}}(超管)</view>

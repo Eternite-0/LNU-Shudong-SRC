@@ -33,7 +33,9 @@ Page({
     leftHeight: 0,
     rightHeigt: 1,
     avatarUrl:defaultAvatarUrl,
-    nickname:""
+    nickname:"",
+    userInfo: {},
+    canIUseGetUserProfile: false,
   },
   onLoad: function () {
     this.checkAuth();
@@ -356,7 +358,8 @@ Page({
       this.setData({
         showLoginButton: false,
         pageNumber: this.data.initPageNumber,
-        posts:[]
+        posts:[],
+        canIUseGetUserProfile: true
       })
       that.getPersonalInfo()
       that.statistic()

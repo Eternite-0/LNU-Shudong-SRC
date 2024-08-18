@@ -9,7 +9,7 @@
         <view class="item-header">
           <view class="avatar-item" bindtap="openUserInfo" data-id="{{item.poster.id}}">
             <image class="avatar-border" src="/image/v2/border.png"></image>
-            <image class="user-avatar" src="{{item.poster.avatar}}"></image>
+            <image class="user-avatar" src="{{'https://images.weserv.nl/?url='+item.poster.avatar}}"></image>
           </view>
           <view class="nickname-item">
             <view class="nickname-top">
@@ -64,7 +64,7 @@
               <view class="praise-item" 
                     wx:for="{{item.praises}}" 
                     wx:key="{{item.praises}}">
-                <image src="{{item.avatar}}"></image>
+                <image src="{{'https://images.weserv.nl/?url='+item.avatar}}"></image>
                 <view class="praise-name">{{item.nickname}}</view>
               </view>
             </view>

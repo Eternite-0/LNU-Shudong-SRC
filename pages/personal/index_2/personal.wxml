@@ -7,7 +7,7 @@
     </view>
     <view class="bg-null"></view>
     <view class="avatar-container" wx:if="{{!showLoginButton}}">
-      <image class="avatar" src='{{user.avatar}}'></image>
+      <image class="avatar" src='{{"https://images.weserv.nl/?url=" +user.avatar}}'></image>
       <image class="header-avatar-border" src="/image/v2/border.png"></image>
       <image class="boy" wx:if="{{user.gender == 1}}" src="/image/v2/boy.png"></image>
       <image class="girl" wx:if="{{user.gender == 2}}" src="/image/v2/girl.png"></image>
@@ -74,7 +74,7 @@
     <!-- 动态详情 -->
     <view class="poster-container">
       <view class="poster-data">
-        <view class="poster-data-item"><view data-type="1" bindtap="select" class="select-tab">校园墙</view><view class='{{selectPoster==1?"select-tab-bootom":"not-select-tab-bootom"}}'></view></view>
+        <view class="poster-data-item"><view data-type="1" bindtap="select" class="select-tab">表白墙</view><view class='{{selectPoster==1?"select-tab-bootom":"not-select-tab-bootom"}}'></view></view>
         <view class="poster-data-item"><view data-type="2" bindtap="select" class="select-tab">卖舍友</view><view class='{{selectPoster==2?"select-tab-bootom":"not-select-tab-bootom"}}'></view></view>
       </view>
     </view>
@@ -85,7 +85,7 @@
         <view class="item-header">
           <view class="avatar-item">
             <image class="avatar-border" src="/image/v2/border.png"></image>
-            <image class="user-avatar" src="{{item.poster.avatar}}"></image>
+            <image class="user-avatar" src="{{'https://images.weserv.nl/?url='+item.poster.avatar}}"></image>
           </view>
           <view class="nickname-item">
             <view class="nickname-top">
@@ -93,8 +93,7 @@
               <image src="/image/v2/index-admin.png" wx:if="{{item.supertube == 1}}"></image>
             </view>
             <view class="nickname-bottom">
-              <view class="nickname-flag" wx:if="{{item.topic != '无'}}">@</view>
-              <view class="bottom-name" wx:if="{{item.topic != '无'}}">{{item.topic}}</view>
+              <view class="nickname-flag" wx:if="{{item.topic != '无'}}">@{{item.topic}}</view>
             </view>
           </view>
           <view class="icon-item">
@@ -140,7 +139,7 @@
               <view class="praise-item" 
                     wx:for="{{item.praises}}" 
                     wx:key="id">
-                <image src="{{item.avatar}}"></image>
+                <image src="{{'https://images.weserv.nl/?url='+item.avatar}}"></image>
                 <view class="praise-name">{{item.nickname}}</view>
               </view>
             </view>
@@ -157,7 +156,7 @@
                     data-objid="{{item.id}}"
                     data-refid="{{sub.id}}" 
                     data-objtype='1'>
-                <image src="{{sub.commenter.avatar}}"></image>
+                <image src="{{'https://images.weserv.nl/?url='+ sub.commenter.avatar}}"></image>
                 <view class="comment-name"  wx:if="{{sub.author == 0 && sub.commenter.supertube != 1}}">{{sub.commenter.nickname}}</view>
                 <view class="comment-name"  wx:if="{{sub.author == 1 && sub.commenter.supertube != 1}}">{{sub.commenter.nickname}}(楼主)</view>
                 <view class="comment-name"  wx:if="{{sub.commenter.supertube == 1}}">{{sub.commenter.nickname}}(超管)</view>

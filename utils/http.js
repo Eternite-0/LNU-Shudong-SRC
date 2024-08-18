@@ -12,38 +12,33 @@ const login = function (_method = null, _url = null, _data = null, callback = nu
 * 获取用户信息 
 */
 const getUserInfo = function (_method = null, _url = null, _data = null, callback = null) {
-  console.log('get user info');
-  let that = this;
-  console.log("内容")
-  wx.getUserProfile({
-    desc: '用于完善会员资料',
-    success: res => {
-      wx.login({
-        success: loginResult => { // 发送 res.code 到后台换取 openId, sessionKey, unionId
-          post("/auth/login_v2?type=weChat", {
-            encrypted_data: res.encryptedData,
-            code: loginResult.code,
-            iv: res.iv,
-            app_id: config.alianceKey
-          }, function (res) {
-            wx.setStorageSync('token', res.data.data);
-            console.log('token:' + res.data.data);
-            if (_method) {
-              httpRequest(_method, _url, _data, callback);
-            }
-            if (callback) {
-              //回调函数
-              callback();
-            }
-          });
-
-        },
-        fail:res=>{
-          console.log(res);
+    console.log('get user info');
+    let that = this;
+    wx.login({
+    success: loginResult => { // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        post("/auth/login_v2?type=weChat", {
+        code: loginResult.code,
+        iv:'',
+        encrypted_data:'',
+        app_id: config.alianceKey
+        }, function (res) {
+            console.log(res)
+        wx.setStorageSync('token', res.data.data);
+        console.log('token:' + res.data.data);
+        if (_method) {
+            httpRequest(_method, _url, _data, callback);
         }
-      })
+        if (callback) {
+            //回调函数
+            callback();
+        }
+        });
+
+    },
+    fail:res=>{
+        console.log(res);
     }
-  })
+    })
 }
 
 /**

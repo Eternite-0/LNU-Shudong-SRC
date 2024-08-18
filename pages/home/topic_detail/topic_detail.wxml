@@ -2,7 +2,7 @@
     <!-- 话题 -->
     <view class="topic-content" bindtap='openTopic' data-id="{{topic.id}}">
       <view class="topic-title"><view class="title"><view>今日话题</view></view></view>
-      <image class="topic-image" mode="aspectFill" src='{{baseImageUrl+attachments[0]}}'></image>
+      <image class="topic-image" mode="aspectFill" src='{{"https://images.weserv.nl/?url="+ baseImageUrl+attachments[0]}}'></image>
       <view class="topic-data">
         <view class="topic-data-content">{{topicContent}}</view>
       </view>

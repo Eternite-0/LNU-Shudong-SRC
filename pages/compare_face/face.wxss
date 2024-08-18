@@ -60,7 +60,7 @@ page{
   flex-direction: row;
   justify-content: center;
   font-size: 25rpx;
-  font-family: SF Pro Text, SF Pro Text-Regular;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 400;
   text-align: JUSTIFIED;
   color: #cb9494;
@@ -80,7 +80,7 @@ page{
   border-radius: 15px;
   box-shadow: 0px 0px 5px 0px rgba(229,161,34,0.69); 
   font-size: 12px;
-  font-family: SF Pro Text, SF Pro Text-Regular;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 400;
   text-align: CENTER;
   line-height: 12px;
@@ -236,7 +236,7 @@ page{
 
 .report-cn{
   font-size: 40rpx;
-  font-family: OPPOSans, OPPOSans-Bold;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 700;
   text-align: CENTER;
   color: #000000;
@@ -246,7 +246,7 @@ page{
 
 .report-en{
   font-size: 9px;
-  font-family: SF Pro Text, SF Pro Text-Regular;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 400;
   color: #000000;
   line-height: 18rpx;
@@ -255,7 +255,7 @@ page{
 
 .report-code{
   font-size: 60rpx;
-  font-family: OPPOSans, OPPOSans-Bold;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 700;
   text-align: RIGHT;
   color: #ee5050;
@@ -263,7 +263,7 @@ page{
 
 .report-same{
   font-size: 20rpx;
-  font-family: SF Pro Text, SF Pro Text-Bold;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 700;
   text-align: LEFT;
   color: #000000;
@@ -327,7 +327,7 @@ page{
 .rp-result{
   width: 23%;
   font-size: 28rpx;
-  font-family: OPPOSans, OPPOSans-Bold;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 700;
   text-align: LEFT;
   color: #000000;
@@ -335,7 +335,7 @@ page{
 
 .rp-type-data{
   font-size: 25rpx;
-  font-family: OPPOSans, OPPOSans-Regular;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 400;
   text-align: LEFT;
   color: #000000;
@@ -344,7 +344,7 @@ page{
 .rp-result-content{
   width: 77%;
   font-size: 22rpx;
-  font-family: OPPOSans, OPPOSans-Regular;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 400;
   text-align: LEFT;
   color: #000000;
@@ -425,7 +425,7 @@ page{
   background: linear-gradient(150deg,#ffd73b 0%, #fbc346 100%);
   border-radius: 100rpx;
   font-size: 14px;
-  font-family: OPPOSans, OPPOSans-Heavy;
+  font-family: PingFangSC, PingFangSC-Regular;
   font-weight: 800;
   text-align: CENTER;
   color: #353b79;
